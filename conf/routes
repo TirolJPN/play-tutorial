@@ -5,3 +5,8 @@ GET     /todo                       controllers.TodoController.list()
 
 GET     /todo/new                   controllers.TodoController.todoNew()
 POST    /tofo                       controllers.TodoController.todoAdd()
+
+GET     /todo/edit/:todoId          controllers.TodoController.todoEdit(todoId:Long)
+POST    /todo/:todoId               controllers.TodoController.todoUpdate(todoId:Long)
+
+POST    /todo/:todoId/delete        controllers.TodoController.todoDelete(todoId:Long)
