@@ -3,3 +3,5 @@ GET     /assets/*file               controllers.Assets.versioned(path="/public",
 GET     /todo/helloworld            controllers.TodoController.helloworld()
 GET     /todo                       controllers.TodoController.list()
 
+GET     /todo/new                   controllers.TodoController.todoNew()
+POST    /tofo                       controllers.TodoController.todoAdd()
